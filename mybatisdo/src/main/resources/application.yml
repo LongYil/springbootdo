@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost/springbootdo?characterEncoding=UTF-8&useSSL=false
+mybatis:
+  mapper-locations: mapper/*.xml
