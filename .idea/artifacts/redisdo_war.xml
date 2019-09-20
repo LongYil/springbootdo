@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="redisdo:war">
+    <output-path>$PROJECT_DIR$/redisdo/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>redisdo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="redisdo.war">
+      <element id="artifact" artifact-name="redisdo:war exploded" />
+    </root>
+  </artifact>
+</component>
