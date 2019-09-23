@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mybatisdo/mybatisdo.iml" filepath="$PROJECT_DIR$/mybatisdo/mybatisdo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nettydo/nettydo.iml" filepath="$PROJECT_DIR$/nettydo/nettydo.iml" />
       <module fileurl="file://$PROJECT_DIR$/redisdo/redisdo.iml" filepath="$PROJECT_DIR$/redisdo/redisdo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springbootdo.iml" filepath="$PROJECT_DIR$/.idea/springbootdo.iml" />
     </modules>

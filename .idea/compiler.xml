@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatisdo" />
         <module name="redisdo" />
+        <module name="nettydo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mybatisdo" target="1.8" />
+      <module name="nettydo" target="1.7" />
       <module name="redisdo" target="1.8" />
       <module name="springbootdo" target="1.8" />
     </bytecodeTargetLevel>

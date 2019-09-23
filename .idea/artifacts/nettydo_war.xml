@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="nettydo:war">
+    <output-path>$PROJECT_DIR$/nettydo/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>nettydo</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="nettydo.war">
+      <element id="artifact" artifact-name="nettydo:war exploded" />
+    </root>
+  </artifact>
+</component>
