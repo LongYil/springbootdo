@@ -19,7 +19,7 @@ public class UserController {
 
     @PostMapping("/test")
     public String test(HttpServletRequest request) throws Exception{
-        
+
         Random random = new Random();
         Thread.sleep(random.nextInt(10) * 1000);
         log.info("测试swaggerdo");
