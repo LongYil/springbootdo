@@ -1,6 +1,8 @@
 package com.longdatech.nettydo;
 
 import com.longdatech.nettydo.discardexample.DiscardServer;
+import com.longdatech.nettydo.discardexample.EchoServer;
+import com.longdatech.nettydo.discardexample.TimeServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,7 +17,7 @@ public class Nettydo_Application {
             port = Integer.parseInt(args[0]);
         }
         try{
-            new DiscardServer(port).run();
+            new TimeServer(port).run();
         }catch (Exception e){
             e.printStackTrace();
         }

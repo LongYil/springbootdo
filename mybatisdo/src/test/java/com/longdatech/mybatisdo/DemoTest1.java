@@ -12,7 +12,7 @@ import java.nio.channels.*;
 import java.util.Scanner;
 
 @Slf4j
-public class DemoTest implements Serializable{
+public class DemoTest1 implements Serializable{
 
 
     private static final long serialVersionUID = 8644840316954922164L;
