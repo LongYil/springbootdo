@@ -1,8 +1,6 @@
 package com.longdatech.nettydo;
 
-import com.longdatech.nettydo.discardexample.DiscardServer;
-import com.longdatech.nettydo.discardexample.EchoServer;
-import com.longdatech.nettydo.discardexample.TimeServer;
+import com.longdatech.nettydo.timepojoexample.TimeServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

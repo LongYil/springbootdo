@@ -1,4 +1,4 @@
-package com.longdatech.nettydo.discardexample;
+package com.longdatech.nettydo.generaldecodeexample;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
@@ -26,7 +26,7 @@ public class TimeClient {
             b.handler(new ChannelInitializer<SocketChannel>() {
                 @Override
                 public void initChannel(SocketChannel ch) throws Exception {
-                    ch.pipeline().addLast(new Solution1TimeClientHandler());
+                    ch.pipeline().addLast(new TimeDecoder(), new TimeClientHandler());
                 }
             });
             

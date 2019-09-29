@@ -1,4 +1,4 @@
-package com.longdatech.nettydo.discardexample;
+package com.longdatech.nettydo.generaldecodeexample;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -29,10 +29,10 @@ public class TimeServer {
             ServerBootstrap b = new ServerBootstrap(); // (2)
             b.group(bossGroup, workerGroup)
              .channel(NioServerSocketChannel.class) // (3)
-             .childHandler(new ChannelInitializer<SocketChannel>() { // (4)
+             .childHandler(new ChannelInitializer<SocketChannel>() {
                  @Override
                  public void initChannel(SocketChannel ch) throws Exception {
-                     ch.pipeline().addLast(new TimeServerHandler());
+                     ch.pipeline().addLast(new TimeDecoder(), new TimeServerHandler());
                  }
              })
              .option(ChannelOption.SO_BACKLOG, 128)          // (5)

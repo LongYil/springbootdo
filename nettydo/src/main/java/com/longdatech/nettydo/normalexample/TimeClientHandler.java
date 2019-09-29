@@ -1,4 +1,4 @@
-package com.longdatech.nettydo.discardexample;
+package com.longdatech.nettydo.normalexample;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
