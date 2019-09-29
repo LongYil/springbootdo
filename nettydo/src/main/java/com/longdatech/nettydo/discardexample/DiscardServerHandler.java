@@ -11,10 +11,19 @@ import io.netty.util.ReferenceCountUtil;
  */
 public class DiscardServerHandler extends ChannelInboundHandlerAdapter { // (1)
 
+    {
+        System.out.println("服务器处理程序启动。。");
+    }
+    public DiscardServerHandler(){
+        super();
+        System.out.println("实例化了一个服务器处理程序");
+    }
+
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) { // (2)
         // Discard the received data silently.
 //        ((ByteBuf) msg).release(); // (3)
+
         Object obj = msg;
         ByteBuf in = (ByteBuf) msg;
         try {
