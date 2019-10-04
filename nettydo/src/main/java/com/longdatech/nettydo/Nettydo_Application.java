@@ -1,6 +1,6 @@
 package com.longdatech.nettydo;
 
-import com.longdatech.nettydo.timepojoexample.TimeServer;
+import com.longdatech.nettydo.byteexample.ByteServer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,7 +15,7 @@ public class Nettydo_Application {
             port = Integer.parseInt(args[0]);
         }
         try{
-            new TimeServer(port).run();
+            new ByteServer(port).run();
         }catch (Exception e){
             e.printStackTrace();
         }
