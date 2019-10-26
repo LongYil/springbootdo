@@ -2,9 +2,11 @@ package com.longdatech.mybatisdo;
 
 import com.longdatech.mybatisdo.dao.SysUser;
 import org.apache.ibatis.binding.MapperProxyFactory;
+import org.apache.ibatis.builder.BaseBuilder;
 import org.apache.ibatis.executor.ErrorContext;
 import org.apache.ibatis.reflection.factory.DefaultObjectFactory;
 import org.apache.ibatis.reflection.factory.ObjectFactory;
+import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -57,6 +59,7 @@ public class DemoTest3 {
     @Test
     public void test3() throws Exception{
         SqlSessionFactoryBuilder builder;
+        Configuration configuration = null;
 
 
     }
